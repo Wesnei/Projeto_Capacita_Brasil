@@ -182,7 +182,6 @@ body{
     font-size: 2.25rem;
     font-family: var(--fonte-primaria);
     margin-top: 30px;
-    margin-bottom: 20px;
 }
 
 .contact__form-section {
@@ -239,7 +238,6 @@ body{
     font-size: 2.25rem;
     font-family: var(--fonte-primaria);
     margin-top: 30px;
-    margin-bottom: 20px;
 }
 
 
@@ -291,7 +289,6 @@ body{
     height: 50px;
     border-radius: 50%;
     object-fit: cover
-
 }
 
 .aprendizado {
@@ -309,18 +306,50 @@ body{
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
   
-  .technologies ul {
-    list-style: none;
-    padding: 0;
+  .technologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
   }
   
-  .technologies li {
-    margin: 5px 0;
-    padding: 10px;
-    border-radius: 5px;
-    font-size: var(--font-size-medium);
-    margin-bottom: 14px;
+  .card {
+    background: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+  
+  .card i {
+    font-size: 40px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover i {
+    transform: scale(1.2);
+  }
+  
+  .card h3 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .card p {
+    font-size: 14px;
+    color: #666;
+  }
+  
   
   .tips .tip {
     margin: 20px 0;
@@ -393,6 +422,3 @@ body{
     }
   }
   
-
-
-
