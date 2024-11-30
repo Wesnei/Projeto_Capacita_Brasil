@@ -5,30 +5,55 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Página de Aprendizado</title>
   <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <header class="cabecalho">
-        <nav class="cabecalho__menu">
-            <a class="cabecalho__menu__link" href="index.html">Home</a>
-            <a class="cabecalho__menu__link" href="about.html">Sobre mim</a>
-            <a class="cabecalho__menu__link" href="contact.html">Contato</a>
-            <a class="cabecalho__menu__link" href="testemonial.html">Depoimentos</a>
-            <a class="cabecalho__menu__link" href="aprendizado.html">Aprendizado</a>
-        </nav>
-    </header>
+  <header class="cabecalho">
+    <nav class="cabecalho__menu">
+      <a class="cabecalho__menu__link" href="index.html">Home</a>
+      <a class="cabecalho__menu__link" href="about.html">Sobre mim</a>
+      <a class="cabecalho__menu__link" href="contact.html">Contato</a>
+      <a class="cabecalho__menu__link" href="testemonial.html">Depoimentos</a>
+      <a class="cabecalho__menu__link" href="aprendizado.html">Aprendizado</a>
+    </nav>
+  </header>
   <div class="container">
     <h1 class="aprendizado">Tecnologias que Estou Aprendendo</h1>
     
-    <!-- Tecnologias -->
+    <!-- Tecnologias com cards -->
     <section class="technologies">
-      <ul>
-        <li class="list">HTML5, CSS3 e JavaScript</li>
-        <li class="list">React para desenvolvimento frontend</li>
-        <li class="list">Node.js para backend</li>
-        <li class="list">Testes com Jest e Cypress</li>
-        <li class="list">Banco de Dados: MySQL e MongoDB</li>
-      </ul>
+      <div class="card">
+        <i class="fab fa-html5" style="color: #e34f26;"></i>
+        <h3>HTML5</h3>
+        <p>Aprendendo a estruturar páginas da web.</p>
+      </div>
+      <div class="card">
+        <i class="fab fa-css3-alt" style="color: #1572b6;"></i>
+        <h3>CSS3</h3>
+        <p>Estilizando páginas com responsividade.</p>
+      </div>
+      <div class="card">
+        <i class="fab fa-js" style="color: #f7df1e;"></i>
+        <h3>JavaScript</h3>
+        <p>Criando interatividade com lógica de programação.</p>
+      </div>
+      <div class="card">
+        <i class="fab fa-react" style="color: #61dafb;"></i>
+        <h3>React</h3>
+        <p>Desenvolvendo aplicações frontend modernas.</p>
+      </div>
+      <div class="card">
+        <i class="fab fa-node" style="color: #339933;"></i>
+        <h3>Node.js</h3>
+        <p>Desenvolvendo backend eficiente.</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-database" style="color: #4db33d;"></i>
+        <h3>Banco de Dados</h3>
+        <p>Trabalhando com MySQL e MongoDB.</p>
+      </div>
     </section>
+    
 
     <!-- Dicas e trechos de código -->
     <section class="tips">
@@ -66,27 +91,26 @@ async function fetchData(url) {
 
     <!-- Formulário de comentários -->
     <section class="contact-form">
-  <h2 class="subtitle">Deixe sua mensagem</h2>
-  <form class="form">
-    <div class="form-group">
-      <label for="name">Seu Nome</label>
-      <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
-    </div>
-    <div class="form-group">
-      <label for="email">Seu Email</label>
-      <input type="email" id="email" name="email" placeholder="Digite seu email" required>
-    </div>
-    <div class="form-group">
-      <label for="message">Sua Mensagem</label>
-      <textarea id="message" name="message" rows="5" placeholder="Digite sua mensagem" required></textarea>
-    </div>
-    <button type="submit" class="form-button">Enviar Mensagem</button>
-  </form>
-</section>
-
+      <h2 class="subtitle">Deixe sua mensagem</h2>
+      <form class="form">
+        <div class="form-group">
+          <label for="name">Seu Nome</label>
+          <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Seu Email</label>
+          <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Sua Mensagem</label>
+          <textarea id="message" name="message" rows="5" placeholder="Digite sua mensagem" required></textarea>
+        </div>
+        <button type="submit" class="form-button">Enviar Mensagem</button>
+      </form>
+    </section>
   </div>
   <footer class="rodape">
     <p>Desenvolvido por Wesnei.</p>
-</footer>
+  </footer>
 </body>
 </html>
