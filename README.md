@@ -20,9 +20,9 @@ Este é o meu portfólio pessoal, desenvolvido em HTML e CSS como parte do Módu
 
 ## Boas Práticas Utilizadas  
 
-1. **Semântica HTML**: Utilização de tags HTML5 apropriadas para melhorar a acessibilidade e o SEO.  
-2. **Organização de Arquivos**: Estrutura de pastas clara e lógica para facilitar a manutenção e a escalabilidade.  
-3. **Responsividade**: O design se adapta a diferentes tamanhos de tela, garantindo uma boa experiência em dispositivos móveis e desktops.  
+1. Semântica HTML: Utilização de tags HTML5 apropriadas para melhorar a acessibilidade e o SEO.  
+2. Organização de Arquivos: Estrutura de pastas clara e lógica para facilitar a manutenção e a escalabilidade.  
+3. Responsividade: O design se adapta a diferentes tamanhos de tela, garantindo uma boa experiência em dispositivos móveis e desktops.  
 
 ---
 
