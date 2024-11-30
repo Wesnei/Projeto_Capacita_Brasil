@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página de Aprendizado</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <nav class="cabecalho__menu">
+            <a class="cabecalho__menu__link" href="index.html">Home</a>
+            <a class="cabecalho__menu__link" href="about.html">Sobre mim</a>
+            <a class="cabecalho__menu__link" href="contact.html">Contato</a>
+            <a class="cabecalho__menu__link" href="testemonial.html">Depoimentos</a>
+            <a class="cabecalho__menu__link" href="aprendizado.html">Aprendizado</a>
+        </nav>
+    </header>
+  <div class="container">
+    <h1 class="aprendizado">Tecnologias que Estou Aprendendo</h1>
+    
+    <!-- Tecnologias -->
+    <section class="technologies">
+      <ul>
+        <li class="list">HTML5, CSS3 e JavaScript</li>
+        <li class="list">React para desenvolvimento frontend</li>
+        <li class="list">Node.js para backend</li>
+        <li class="list">Testes com Jest e Cypress</li>
+        <li class="list">Banco de Dados: MySQL e MongoDB</li>
+      </ul>
+    </section>
+
+    <!-- Dicas e trechos de código -->
+    <section class="tips">
+      <h2 class="subtitle">Dicas e Trechos de Código</h2>
+      <div class="tip">
+        <strong>Dica 1:</strong> Utilize variáveis CSS para facilitar a personalização!
+        <pre>
+/* Exemplo de variáveis no CSS */
+:root {
+  --primary-color: #4CAF50;
+  --secondary-color: #333;
+}
+body {
+  color: var(--secondary-color);
+  background: var(--primary-color);
+}
+        </pre>
+      </div>
+      <div class="tip">
+        <strong>Dica 2:</strong> No JavaScript, use async/await para facilitar o trabalho com promessas:
+        <pre>
+// Exemplo de async/await
+async function fetchData(url) {
+  try {
+    const response = await fetch(url);
+    const data = await response.json();
+    console.log(data);
+  } catch (error) {
+    console.error('Erro ao buscar dados:', error);
+  }
+}
+        </pre>
+      </div>
+    </section>
+
+    <!-- Formulário de comentários -->
+    <section class="contact-form">
+  <h2 class="subtitle">Deixe sua mensagem</h2>
+  <form class="form">
+    <div class="form-group">
+      <label for="name">Seu Nome</label>
+      <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Seu Email</label>
+      <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+    </div>
+    <div class="form-group">
+      <label for="message">Sua Mensagem</label>
+      <textarea id="message" name="message" rows="5" placeholder="Digite sua mensagem" required></textarea>
+    </div>
+    <button type="submit" class="form-button">Enviar Mensagem</button>
+  </form>
+</section>
+
+  </div>
+  <footer class="rodape">
+    <p>Desenvolvido por Wesnei.</p>
+</footer>
+</body>
+</html>
